@@ -500,3 +500,12 @@ def parabolic(x, a=0.0, b=0.0, c=0.0):
 
     """
     return a * x**2 + b * x + c
+
+def exp_dec(x, DP, tau, Pf):
+    """
+    Exponential function
+
+    exp_dec(x, DP, tau, Pf) = DP * np.exp(-x / tau) + Pf
+    
+    """
+    return DP * np.exp(-x / tau) + Pf
