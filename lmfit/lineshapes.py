@@ -505,7 +505,7 @@ def exp_dec(x, DP, tau, Pf):
     """
     Exponential function
 
-    exp_dec(x, DP, tau, Pf) = DP * np.exp(-x / tau) + Pf
+    exp_dec(x, DP, tau, Pf) = DP * exp(-x / tau) + Pf
     
     """
-    return DP * np.exp(-x / tau) + Pf
+    return DP * exp(-x / tau) + Pf
